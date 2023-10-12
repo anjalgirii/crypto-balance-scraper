@@ -11,7 +11,7 @@ Simple project based on Python that allows you to scrape and analyze the balance
    - Execute the `main.py` script to start the scraping process.
 
 3. **Review the Results**:
-   - Check the `output` folder for the results, including the log file and the file containing wallet addresses with non-zero balances.
+   - Check the `output` folder for the results, including the log file and the file containing wallet addresses with balances.
 
 ## Extending for Other Cryptocurrencies or Blockchains
 

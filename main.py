@@ -13,7 +13,7 @@ def main():
     # Load settings from settings.ini
     config = ConfigParser()
     config.read('config/settings.ini')
-    check_eth = config.getboolean('Settings', 'check_eth', fallback=False)
+    check_eth = config.getboolean('Settings', 'check_eth', fallback=True)
     check_btc = config.getboolean('Settings', 'check_btc', fallback=True)
 
     current_date = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')

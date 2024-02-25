@@ -1,0 +1,11 @@
+{
+	"eth_config":{
+		"scrape_site_url": "47.243.10.69"
+	},
+	"btc_config":{
+		"scrape_site_url": "135.181.109.52"
+	},
+	"ltc_config":{
+		
+	}
+}

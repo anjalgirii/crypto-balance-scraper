@@ -18,7 +18,7 @@ def get_balance(wallet_address):
             response = requests.get(url)
 
             if response.status_code == 200:
-                soup = BeautifulSoup(response.text, 'html.parser')  # Fixed parser argument
+                soup = BeautifulSoup(response.text, 'html.parser')
                 target_table = soup.find('table', class_='table data-table')
                 balance_amount = "Balance not found"  # Default message if balance is not found
 

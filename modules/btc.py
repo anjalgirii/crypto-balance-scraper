@@ -26,9 +26,7 @@ def get_balance(wallet_address):
                         if cells and "Final Balance" in cells[0].text:
                             final_balance_span = cells[1].find('span', class_='prim-amt')
                             if final_balance_span:
-                                # Extract the balance amount correctly, ensuring no double " BTC" suffix
                                 balance_amount = final_balance_span.text.strip()
-                                # Only append " BTC" if it's not already part of the balance string
                                 if " BTC" not in balance_amount:
                                     balance_amount += " BTC"
                                 return balance_amount

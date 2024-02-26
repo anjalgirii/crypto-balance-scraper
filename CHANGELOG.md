@@ -2,7 +2,7 @@
 
 ### Added
 - Ability to extract crypto addresses from any directory
-- Balance check functionality for BTC
+- Balance check functionality for BTC, LTC
 - Output folder for storing results
 
 ### Changed

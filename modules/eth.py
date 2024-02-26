@@ -5,13 +5,13 @@ import json
 def is_valid_wallet_address(address):
     return address.startswith('0x') and len(address) == 42
 
-def get_balance(wallet_address, coin):
+def get_balance(wallet_address):
     config_file = 'config/config.json'
     
     with open(config_file, 'r') as config_file:
         config = json.load(config_file)
     
-    coin_config = config.get(f"{coin}_config")
+    coin_config = config.get(f"eth_config")
     
     if coin_config:
         scrape_site_url = coin_config.get("scrape_site_url")
@@ -46,5 +46,5 @@ def get_balance(wallet_address, coin):
         except requests.exceptions.RequestException as e:
             return None
     else:
-        print(f"Configuration not found for coin: {coin}")
+        print("ETH configuration not found in the config file.")
         return None

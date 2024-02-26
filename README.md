@@ -7,7 +7,7 @@ Simple project based on Python that allows you to scrape and analyze the balance
 1. **Run the Scraper**:
    - Execute the `main.py` script to start the scraping process.
 
-2. **Prepare the Input File**: Drag n drop folders on the terminal.
+2. **Prepare the Input File**: Drag n drop files or folders on the terminal.
 
 3. **Review the Results**:
    - Check the `output` folder for the results.
